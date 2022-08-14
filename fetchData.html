@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id = "text1">JavaScript Variables</h1>
+
+Name:<input name="name" id="nameId"> 
+<span id="name-error">* this is an error</span>  <br>
+
+Email: <input name="email" id="mailId"> 
+<span id="email-error"> * this is an error</span> <br>
+
+<button name="save" onClick="saveData()">Save</button>
+
+<p class ="para1">In this example, x, y, and z are variables.</p>
+
+<p id="demo"></p>
+
+<script>
+
+	let name = document.getElementById("nameId").value;
+console.log("name: ", name);
+
+
+function saveData() {
+	name = document.getElementById("nameId").value;
+	console.log("name: ", name);
+    let email = 
+document.getElementById("mailId").value;
+console.log("email: ",email);
+	
+    
+document.getElementById("text1").innerHTML = "swami";
+//console.log("text1 on save: ",abc);
+
+
+let abc = 
+document.getElementsByClassName("para1")[0].innerHTML = "welcome the unvierse"
+console.log("para1: ",abc);
+	  
+
+ 
+let xyz = 
+document.getElementById("nameId").value;
+console.log("name-error: " ,xyz);
+
+console.log("length: ", xyz.length);
+
+if(xyz.length<6 ) {
+    document.getElementById("name-error").innerText = "name should be greater than six character";
+} else{
+    document.getElementById("name-error").innerText = "";
+}
+
+
+
+let kyc = 
+document.getElementById("mailId").value;
+console.log("email-error: ", kyc);
+console.log(" email length: ", email.length)
+
+if(kyc.length>15) {
+    document.getElementById("email-error").innerText = "email should be less than 15 character";
+}else{
+    document.getElementById("email-error").innerHTML = "";
+}
+}
+
+
+let email = 
+document.getElementById("mailId").value;
+console.log("email: ",email);
+
+let abc = 
+document.getElementById("text1").innerHTML;
+console.log("text1: ",abc);
+
+
+	
+</script>
+
+</body>
+</html>
+
+

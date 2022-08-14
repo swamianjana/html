@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>javascript tutorial </title>
+    <!-- <script src="./forLoop.js" /> -->
+    <style>
+        .container{
+            border: 2px solid red;
+            font-size: 60px;
+            background-color: brown;
+            color: black;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 3px o;
+            padding: 9px;
+        }
+        .bg-primary{
+            background-color: blueviolet;
+        }
+
+        .digital-watch-container {
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+            padding-right: 12px;
+        } 
+
+    </style>
+
+</head>
+
+<body>
+    <div class="digital-watch-container">
+        <h3>Digital Watch</h3>
+        <h1 class="watch">
+            <span class="hours">00</span> :
+            <span class="mins">00</span> :
+            <span class="sec">00</span>
+        </h1>
+    </div>
+    <h1>welcome to my javascript .i made this
+        first time
+    </h1>
+    <div id="first container" class="container">
+        <button id="click" onclick="clicked()">click me</button>
+        <button id="click" onclick="clicked()">click me</button>
+
+    </div>
+    <div class="cotainer">
+        <p>this is pragraph</p>
+    </div>
+  
+
+    <script>
+        // 1. ways to print in javascript
+        console.log("anjana");
+        // alert("swami");
+        // document.write("this is document write");
+
+        // 2. javascript console API
+        // console.log("anjana", 4+6, "aother log");
+        // // alert("swami");
+        // console.warn("this is warning");
+        // console.error("this is an error");
+
+        // 3. javascript varibles
+        // what are varibles ?- container to store data values
+        var number1 = 34;
+        var number2 = 56;
+        // console.log(number1 + number2);
+
+        // 4. Data types in Javascript
+        // Numbers
+        var num1 = 455;
+        var num2 = 56.76;
+        // console.log(num1); 
+
+        // string
+        var str1 = "this is a string";
+        var str2 = 'this is also a string';
+
+        // objects
+        var marks = {
+            naveen: 34,
+            anjana: 78,
+            nave: 99.977,
+        }
+        // console.log(marks);
+
+
+        // Boolean
+        var a = true;
+        var b = false;
+        // console.log(a,b);
+
+        var und = undefined;
+        // console.log(undefined);
+
+        var n = null;
+        // console.log(n);
+
+        //    At a very high level, there are two type of date
+        //    type in javasccript
+        //    1. primitive data type: uundefined, null,number,
+        // string, Boolean, symbole;
+        //    2. reference data type: arrays, objects;
+
+        var arr = [1, 2, 3, 4, 5]
+        // console.log(arr);
+
+        // operator in javasccript
+        // arthimatic operation 
+        var a = 100;
+        var b = 10;
+        // console.log("this value of a + b is", a+b);
+        // console.log("this value of a - b is", a+b);
+        // console.log("this value of a * b is", a+b);
+        // console.log("this value of a / b is", a+b);
+
+        // assignment operator
+        //    var c = b;
+        //    console.log(c);
+
+        // comparision operator
+        var x = 34;
+        var y = 56;
+        // console.log(x == y);
+        // console.log(x >= y);
+        // console.log(x <= y);
+        // console.log(x > y);
+        // console.log(x < y);
+
+        // logical operator
+        // console.log(true && false);
+        // console.log(true && true);
+
+        // logical not;
+        // console.log(!false);
+        // console.log(!true);
+
+        // function in javascript
+        // DRY = DO NOT REPEAT YOURSELF
+        function avg(a, b) {
+            return (a + b) / 2;
+            return c;
+        }
+
+        c1 = avg(4, 6);
+        c2 = avg(14, 16);
+        // console.log(c1, c2);
+
+        // conditional in javascript
+
+        var age = 34;
+        if (age > 8) {
+            //     console.log("you are not a kid");
+        }  
+        
+        // loop
+            var arr = [1, 2, 3, 4, 5, 6, 7];
+            // console.log(arr);
+            // for(var i=0;i<arr.length;i++){
+            //     if(i==2){
+            //     //    break;
+            //     continue;
+            //     }
+            //     console.log(arr[i])
+            // }
+
+
+            // arr.forEach(function (element) {
+            //     console.log(element)
+            // })
+
+            // let j=0;
+    //     while(j<arr.length){
+    //  console.log(arr[j]);
+    //  j ++;
+
+    //     }
+
+//     do{
+// console.log(arr[j]);
+// j ++;
+//     } while(j<arr.length);
+
+   let myArr = ["phone", "camera", 34, null, true];
+// Array methods
+//   console.log(myArr.length);
+// //   myArr.pop();
+//  myArr.push("naveen");
+// //  myArr.shift();
+//   console.log(myArr);
+
+//   string methods in javascript
+
+let myLovelyString = "naveen swami is my brother";
+//   console.log(myLovelyString.length)
+//   console.log(myLovelyString.indexOf("naveen"))
+//   console.log(myLovelyString.lastIndexOf("brother"))
+
+// console.log(myLovelyString.slice(0,5))
+ d = myLovelyString.replace("swami", "nihal swami");
+// console.log(d, myLovelyString)
+
+let myDate = new Date();
+// console.log(myDate.getTime());
+// console.log(myDate.getFullYear());
+// console.lof(myDate.getDay());
+
+// DOM Munipulation
+let elem = document.getElementById('click');
+// console.log(elem);
+
+let elemClass = document.getElementsByClassName("container")
+// console.log(elemClass);
+// elemClass[0].style.background = "blue";
+elemClass[0].classList.add("bg-primary")
+
+tn = document.getElementsByTagName('button')
+console.log(tn)
+createdElement = document.createElement('p');
+createdElement.innerText = "love you papa mummy bhai";
+tn[0].appendChild(createdElement);
+// removedChild(element);---> removes an element;
+
+// selecting using query
+// sel = document.querySelector('.container')
+// console.log(sel)
+// sel = document.querySelectorAll('.container')
+// console.log(sel)
+
+// function clicked(){
+//     console.log('the button was clicked')
+// }
+// window.onload = function(){
+//     console.log('the document was loaded')
+// }
+// // Events in javascripts
+//  firstContainer.addEventListener('click', function(){
+//      console.log("Click hua")
+//  })
+
+
+// Arrow Functions
+// // function summ(a,b){
+//     return 5;
+// }
+summ = (a,b )=>{
+    return a,b;
+}
+
+logkaro = ()=>{
+    console.log("i am your log")
+}
+
+// SetTimeout and setinterval
+// clr = setTimeout(logkaro, 5000);
+// clr = setTimeout(logkaro, 2000);
+
+let fiveTimesRepeat = setInterval(logkaro, 1000);
+setTimeout(() => {
+    clearInterval(fiveTimesRepeat);
+}, 6000);;
+
+// setInterval, setTimeout ------------------ function
+/* 
+1) setInterval: to do same task repetative; I will call until clearInterval.
+
+setInterval(fuction, time in milisecond)
+1000 milisecond = 1 sec;
+
+clearInterval: It is function. to stop setInterval
+clearInterval(time) ,  time: kitna time baad set interval stop kar na hai.....
+
+
+setTimeout: It will call a task after specific time. Only once call.
+
+clearTimeout: It is function. 
+*/
+
+var watchDom = document.getElementsByClassName("watch")[0];
+var hoursDom = document.getElementsByClassName("hours")[0];
+var minsDom = document.getElementsByClassName("mins")[0];
+var secDom = document.getElementsByClassName("sec")[0];
+
+
+var hour = 0;
+var mins = 0;
+var sec = 0;
+
+// a++ = baad m plus
+// ++a = pahle plus
+
+function handleSecond() {
+    secDom.textContent = ++sec;
+    if(sec == 60) {
+        sec = 0;
+        secDom.textContent = 0;
+        minsDom.textContent = ++mins;
+    }
+    if(mins == 60) {
+        mins = 0;
+        minsDom.textContent = 0;
+        hoursDom.textContent = ++hour;
+    }
+    if(hour == 12){
+        hour = 0;
+        hoursDom.textContent = 0;
+    }
+
+}
+
+// Display number in two digit ex: 7=> 07, 22=> 22, 3=> 03
+
+//slice function use for break string
+// function doubleDigitNumber(num) {
+//     return ("0"+num).slice(-2);
+// }
+
+// function handleSecond() {
+//     secDom.textContent = doubleDigitNumber(++sec);
+//     if(sec == 60) {
+//         sec = 0;
+//         secDom.textContent = doubleDigitNumber(0);
+//         minsDom.textContent = doubleDigitNumber(++mins);
+//     }
+//     if(mins == 60) {
+//         mins = 0;
+//         minsDom.textContent = doubleDigitNumber(++sec);
+//         hoursDom.textContent = doubleDigitNumber(++hour);
+//     }
+//     if(hour == 12){
+//         hour = 0;
+//         hoursDom.textContent = doubleDigitNumber(0);
+//     }
+
+// }
+
+
+setInterval(handleSecond, 1000)
+
+
+
+
+
+
+
+// function: to do specific task;
+function buildHouse() 
+{
+    let lebour;
+    let instuments;
+    let etc;
+}
+
+// call sum function (use)
+console.log(sum(3, 6));
+
+// decalaration (define)
+function sum(a, b) 
+{
+    return a + b;
+}
+
+        
+    </script>
+    
+</body>
+
+</html>

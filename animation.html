@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html> lang="en">
+    <head>
+        <title>animation</title>
+        <style>
+            .container{
+                height: 100vh;
+                width: 100vw;
+                background-color: rgb(194, 69, 69);
+            }
+            .box{
+                width:300px ;
+                background-color: rgb(90, 90, 161);
+                 color: white;
+                width: 300px;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                animation-name: widthanimate;
+                animation-duration: 5s;
+                animation-timing-function: ease-in-out ;
+                animation-delay: 1s;
+                animation-iteration-count: 3;
+                animation-duration: normal;
+
+            }
+            @keyframes widthanimate {
+               from{
+                   width: 300px;
+                   height: 300px;
+               } 
+               to{
+                   width: 100vw;
+                   height: 100vw;
+               }
+            }
+        </style>
+    </head>
+<body>
+    <div class="container">
+        <div class="box">myself anjana swami brother naveen swami 
+            engnieer in noida  </div>
+
+    </div>
+
+
+</body>
+
+
+</html>
